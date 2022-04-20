@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0 16px;
+  width: 60%;
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 32px;
+}
+
+.nav__item {
+  display: flex;
+}
+
+.list__item {
+  margin-left: 23px;
+}
