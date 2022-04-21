@@ -12,6 +12,9 @@
     max-width: 1192px
     margin: 0 auto
 
+.body
+  height: 100%
+
 .header
     display: flex
     justify-content: space-between
@@ -26,23 +29,66 @@
         @include h3
         font-size: 16px;
         line-height: 20px;
-        color: $light-text-main
         margin-left: 23px
+        & a
+          color: $light-text-main
 
     &__content
-        & h1
-          @include h1 
-          color: $light-text-main
-          margin-top: 105px
-          margin-bottom: 58px
-        & p 
-          @include p1 
-          color: $light-text-secondary
-          max-width: 879px
-          & span
-            color: $light-theme-3
+      display: flex
+      & h1
+        @include h1
+        color: $light-text-main
+        margin-top: 105px
+        margin-bottom: 58px
+        
+      & p
+        @include p1
+        color: $light-text-secondary
+        max-width: 879px
+        margin-bottom: 105px
+      & span
+        color: $light-theme-3
+      & img
+        margin-top: 191px
+
+a.button
+  background-color: $light-text-main
+  border-radius: 8px
+  color: $light-text-static
+
+main
+  & h2
+    @include h2
+    color: $light-text-main
+    margin-bottom: 16px
+  & p
+    @include p2
+    color: $light-text-secondary
+    & span
+      color: $light-theme-3
+
+
+
+
+
+
+
 
 .footer
   background-color: $light-text-main
   height: 265px
-
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: start
+    & h3 
+      @include h3
+      color: $light-text-static
+      margin-top: 64px
+      margin-bottom: 24px
+    & li 
+      margin-top: 12px
+    & a
+      margin-bottom: 12px
+      @include p3
+      color: $light-text-secondary

@@ -16,56 +16,75 @@
 </head>
 
 <body>
-    <nav class="container header">
-        <a href="#" class="header__logo">
-            <img src="/images/logo.svg" alt="logo" class="logo__img">
-        </a>
-        <ul class="header__list">
-            <li class="header__item"><a href="#">Сквады</a></li>
-            <li class="header__item"><a href="#">Стримеры</a></li>
-        </ul>
-    </nav>
+  <nav class="container header">
+      <a href="#" class="header__logo">
+          <img src="/images/logo.svg" alt="logo" class="logo__img">
+      </a>
+      <ul class="header__list">
+          <li class="header__item"><a href="#">Сквады</a></li>
+          <li class="header__item"><a href="#">Стримеры</a></li>
+          <li class="header__item"><a href="#" class="button">Войти</a></li>
+      </ul>
+  </nav>
 
-    <div class="container header__content">
+  <div class="container header__content">
+    <div class="header__text">
         <h1>
-            Twiki - самая
-            быстрорастущая
-            энциклопедия
+          Twiki - самая
+          быстрорастущая
+          энциклопедия
         </h1>
+        
         <p>
-            Тут мы рассказываем о СНГ стримерах, развиваем <span>#сообщество</span> и просто пишем <span>#историю.</span>
+          Тут мы рассказываем о СНГ стримерах, развиваем <span>#сообщество</span> и просто пишем <span>#историю.</span>
         </p>
     </div>
-    <main>
-        
+    <div class="header__img">
+      <img src="images/header_img.svg" alt="twiki">
+    </div>
+
+  </div>
+
+    <main class="page">
+      <div class="container">
+        <div class="about">
+          <h2>Недавние статьи</h2>
+          <p>
+            Редакторы <span>#twiki</span> постоянно работают над новыми статьями, а разработчики готовят амбицозные обновления
+          </p>
+        </div>
+      <section class="article__recent">
+        <article></article>
+      </section>
+      </div>       
     </main>
 
-    <footer class="footer">
-      <div class="container footer__about">
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <div class="footer__column">
         <h3>О проекте</h3>
-        <ul class="about__list">
-          <li class="about__item"><a href="#">Политика конфиденциальности</a></li>
-          <li class="about__item"><a href="#">Условия пользования</a></li>
-          <li class="about__item"><a href="#">Разработчик</a></li>
+        <ul class="footer__list">
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия пользования</a></li>
+          <li><a href="#">Разработчик</a></li>
         </ul>
       </div>
-      <div class="container footer__socsite">
-        <h3>Соц. сети</h3>
-        <ul class="socsite__list">
-          <li class="socsite__item"><a href="#">Discord</a></li>
-          <li class="socsite__item"><a href="#">Telegram</a></li>
+      <div class="footer__column">
+        <h3>Соц.сети</h3>
+        <ul class="footer__list">
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Telegram</a></li>
         </ul>
       </div>
-      <div class="container footer__content">
+      <div class="footer__column">
         <h3>Контент</h3>
-        <ul class="content__list">
-          <li class="content__item"><a href="#">Сквады</a></li>
-          <li class="content__item"><a href="#">Стримеры</a></li>
+        <ul class="footer__list">
+          <li><a href="#">Сквады</a></li>
+          <li><a href="#">Стримеры</a></li>
         </ul>
       </div>
-    </footer>
-
-
+    </div>
+  </footer>
 </body>
 
 </html>
