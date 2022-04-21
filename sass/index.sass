@@ -1,21 +1,10 @@
 @import './typography'
 @import './colors'
-
-@font-face
-    font-family: 'Montserrat'
-    src: url("../fonts/Montserrat.ttf")
+@import './reset'
 
 *
-    padding: 0
-    margin: 0
-    box-sizing: border-box
     font-family: 'Montserrat', sans-serif
 
-a
-    text-decoration: none
-
-ul
-    list-style: none
 
 .container
     padding: 0 16px
@@ -23,17 +12,37 @@ ul
     max-width: 1192px
     margin: 0 auto
 
-.header__wrapper
+.header
     display: flex
     justify-content: space-between
     align-content: center
     padding-top: 32px
     padding-bottom: 25px
 
-.nav__item
-    display: flex
+    &__list
+        display: flex
 
-.list__item
-    margin-left: 23px
+    &__item
+        @include h3
+        font-size: 16px;
+        line-height: 20px;
+        color: $light-text-main
+        margin-left: 23px
 
+    &__content
+        & h1
+          @include h1 
+          color: $light-text-main
+          margin-top: 105px
+          margin-bottom: 58px
+        & p 
+          @include p1 
+          color: $light-text-secondary
+          max-width: 879px
+          & span
+            color: $light-theme-3
+
+.footer
+  background-color: $light-text-main
+  height: 265px
 
